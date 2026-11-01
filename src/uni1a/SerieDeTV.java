@@ -4,30 +4,26 @@
 package uni1a;
 
 // Subclase SerieDeTV que extiende de ContenidoAudiovisual
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class SerieDeTV extends ContenidoAudiovisual {
-    private int temporadas;
+    private List<Temporada> temporadas; // Composición
 
-    public SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas) {
+    public SerieDeTV(String titulo, int duracionEnMinutos, String genero) {
         super(titulo, duracionEnMinutos, genero);
-        this.temporadas = temporadas;
+        this.temporadas = new ArrayList<>();
     }
 
-    public int getTemporadas() {
-        return temporadas;
+    public void agregarTemporada(int numTemporada, int eps) {
+        temporadas.add(new Temporada(numTemporada, eps));
     }
 
-    public void setTemporadas(int temporadas) {
-        this.temporadas = temporadas;
-    }
-    
     @Override
     public void mostrarDetalles() {
-        System.out.println("Detalles de la película:");
-        System.out.println("ID: " + getId());
-        System.out.println("Título: " + getTitulo());
-        System.out.println("Duración en minutos: " + getDuracionEnMinutos());
-        System.out.println("Género: " + getGenero());
-        System.out.println("Temporadas: " + this.temporadas);
-        System.out.println();
+        System.out.println("SERIE DE TV: " + getTitulo() + " | Género: " + getGenero() + 
+                           " | Temporadas registradas: " + temporadas.size());
+        System.out.println("   Listado: " + temporadas);
     }
 }
