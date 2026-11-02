@@ -1,3 +1,4 @@
+![Diagrama UML](UML.svg)
 # Sistema de Contenidos Audiovisuales - POO Unidad 2
 
 ## 📌 Descripción del Proyecto
