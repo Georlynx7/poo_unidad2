@@ -1,10 +1,9 @@
-![Diagrama UML](UML.svg)
 # Sistema de Contenidos Audiovisuales - POO Unidad 2
 
 📌 Descripción del Proyecto
 Este proyecto es una extensión del sistema de contenidos audiovisuales desarrollado en Java utilizando el entorno Eclipse. Modela una jerarquía de clases aplicando los pilares de la Programación Orientada a Objetos (POO), herencia, encapsulamiento y relaciones UML avanzadas.
 
-**Estructura de Clases y Relaciones UML
+Estructura de Clases y Relaciones UML
 - **Clase Base Abstracta:** `ContenidoAudiovisual`
 - **Clases Base Modificadas:**
   - `Pelicula` ➡️ **Agregación** con la clase `Actor`.
@@ -23,3 +22,4 @@ Requisitos e Instalación
 - **Estudiante:** Georlyn Cedeño
 - **Asignatura:** Programación Orientada a Objetos
 - **Universidad:** Universidad Politécnica Salesiana
+![Diagrama UML](UML.svg)
